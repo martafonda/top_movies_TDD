@@ -1,4 +1,4 @@
-require 'top_movies'
+require_relative "../lib/top_movies.rb"
 
 describe TopMovies do
  it 'should order the movies' do
