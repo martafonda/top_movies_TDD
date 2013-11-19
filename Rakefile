@@ -25,5 +25,7 @@ task :generate_top_lists do
 
   # we clear the file
   File.truncate(source_path, 0)
+  File.open(source_path, 'w+') { |f| f.write(JSON.pretty_generate([])) }
+
 end
 
